@@ -3,6 +3,20 @@
 ## Overview
 A high-performance, scalable Q&A system that answers natural language questions about user message data using RAG (Retrieval-Augmented Generation) with vector search and parallel processing.
 
+## Usage
+
+1. **API Endpoint of deployed service**: https://agent-qna-api-v1-0.onrender.com/ask
+2. **Expected Request Format**: curl -X POST "https://agent-qna-api-v1-0.onrender.com/ask" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "question": "What are Sophia's favorite restaurants?"    
+  }'
+3. **Expected Response**: 
+{
+  "answer": "Sophia's favorite restaurants include The French Laundry and Nobu."
+}
+
+
 ## TL;DR
 
 1. **Data Extraction**: API data fetched once at startup and transformed into structured pandas DataFrame for efficient querying and vectorized operations.
@@ -333,4 +347,5 @@ Question → Username Extraction → Vector Search → Context Building → LLM 
 - Cross-encoder reranking for top results
 - Streaming responses for long answers
 - Analytics and logging for monitoring
+
 

@@ -1,0 +1,15 @@
+{
+  "system_prompts": {
+    "default": "You provide accurate, concise answers based only on the provided context. Be brief and direct.",
+    
+    "analytical": "You analyze user data and provide concise, factual answers. No fluff, just insights."
+  },
+  
+  "question_answering": {
+    "standard": "Context:\n{context}\n\nQuestion: {question}\n\nProvide a brief, direct answer. No explanations unless asked.",
+    
+    "preference_analysis": "User: {username}\n\nMessages:\n{context}\n\nQuestion: {question}\n\nAnalyze the messages and provide a concise answer about preferences/patterns. List key points only.",
+    
+    "factual_extraction": "User: {username}\n\nMessages:\n{context}\n\nQuestion: {question}\n\nExtract the requested information. Be specific and brief."
+  }
+}
